@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1E1B4B"/>
+      <stop offset="0.5" stop-color="#1D4ED8"/>
+      <stop offset="1" stop-color="#0891B2"/>
+    </linearGradient>
+    <linearGradient id="bgBadge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <g opacity="0.12" stroke="#FFFFFF" stroke-width="3">
+    <line x1="0" y1="128" x2="1280" y2="128"/>
+    <line x1="0" y1="256" x2="1280" y2="256"/>
+    <line x1="0" y1="384" x2="1280" y2="384"/>
+    <line x1="0" y1="512" x2="1280" y2="512"/>
+    <line x1="160" y1="0" x2="160" y2="640"/>
+    <line x1="400" y1="0" x2="400" y2="640"/>
+    <line x1="640" y1="0" x2="640" y2="640"/>
+    <line x1="880" y1="0" x2="880" y2="640"/>
+    <line x1="1120" y1="0" x2="1120" y2="640"/>
+  </g>
+  <g transform="translate(200,208)">
+    <rect width="224" height="224" rx="52" fill="url(#bgBadge)"/>
+    <path d="M130 30 L72 126 h38 L98 194 L156 100 h-40 Z" fill="#FFFFFF" stroke-linejoin="round"/>
+  </g>
+  <text x="470" y="330" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="128" font-weight="800" fill="#FFFFFF" letter-spacing="2">bandas</text>
+  <text x="474" y="396" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="38" fill="#E0F2FE">Pandas-compatible DataFrames, at full speed.</text>
+  <g font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="26" font-weight="600" fill="#FFFFFF">
+    <rect x="474" y="430" width="160" height="48" rx="24" fill="none" stroke="#7DD3FC" stroke-width="2"/>
+    <text x="501" y="462">SQL + DB</text>
+    <rect x="652" y="430" width="222" height="48" rx="24" fill="none" stroke="#7DD3FC" stroke-width="2"/>
+    <text x="679" y="462">Time series</text>
+    <rect x="892" y="430" width="158" height="48" rx="24" fill="none" stroke="#7DD3FC" stroke-width="2"/>
+    <text x="927" y="462">ML / DL</text>
+  </g>
+</svg>
