@@ -1,7 +1,7 @@
 # bandas ⚡ — pandas-compatible, faster + Universal Data Platform
 
 > أُعيدت تسمية المكتبة من `fandas` إلى `bandas` — المستودع الرسمي الآن: https://github.com/salim-studio/bandas
-> للترحيل: `pip uninstall fandas` ثم `pip install bandas`، واستبدل `import fandas` بـ `import bandas`.
+> للترحيل: `pip uninstall fandas` ثم `pip install bandas-df`، واستبدل `import fandas` بـ `import bandas`.
 
 `bandas` واجهة مطابقة لـ `pandas` (نفس الأسماء: `DataFrame`, `Series`, `read_csv`, `concat`, `merge`...) لكن **أسرع**، ومع **منظومة متكاملة** لقواعد البيانات، السلاسل الزمنية، تجهيز البيانات، تعلم الآلة، التعلم العميق، والتصوير — لتصبح خيار المطورين ومحللي البيانات وعلماء البيانات.
 
@@ -19,7 +19,7 @@
 تنصيب واحد يثبّت كل شيء (سرعة + قواعد بيانات + تعلم آلة + تصوير + إكسل):
 
 ```bash
-pip install bandas
+pip install bandas-df
 ```
 
 من المصدر:
@@ -31,6 +31,8 @@ pip install -e .
 إضافي فقط للتعلم العميق (torch و tensorflow ضخمان — جيجابايتات — وغير متوفرين لكل نسخ Python):
 
 ```bash
+pip install "bandas-df[dl]"
+# أو من المصدر:
 pip install -e ".[dl]"
 ```
 

@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "bandas"
+name = "bandas-df"
 version = "0.3.0"
 description = "bandas — pandas-compatible, faster DataFrame + universal data platform (SQL/DB, time-series, preprocessing, ML/DL, viz, lazy)"
 readme = "README.md"
