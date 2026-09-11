@@ -3,6 +3,10 @@
 All notable changes to **bandas** are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.4.1] - 2026-09-11
+### Fixed
+- Banner uses an absolute URL so it renders on PyPI as well as GitHub.
+
 ## [0.4.0] - 2026-09-11
 ### Added
 - Full English documentation and project README.

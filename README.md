@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="bandas banner" width="100%"/>
+  <img src="https://raw.githubusercontent.com/salim-studio/bandas/main/assets/banner.svg" alt="bandas banner" width="100%"/>
 </p>
 
 <p align="center">
