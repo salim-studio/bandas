@@ -19,7 +19,7 @@ from . import preprocessing, ml, stats, viz, dl
 from .preprocessing import SimpleImputer, StandardScaler, MinMaxScaler, RobustScaler, LabelEncoder, OneHotEncoder
 from .ml import train_test_split, KFold, accuracy_score, mean_squared_error, mean_absolute_error, r2_score, precision_score, recall_score, f1_score
 
-__version__ = "0.3.0"
+__version__ = "0.4.0"
 __all__ = [
     "DataFrame", "Series", "Database", "LazyFrame",
     "read_csv", "read_parquet", "read_json", "read_excel", "read_html",

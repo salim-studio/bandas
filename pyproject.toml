@@ -4,13 +4,27 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bandas-df"
-version = "0.3.0"
-description = "bandas — pandas-compatible, faster DataFrame + universal data platform (SQL/DB, time-series, preprocessing, ML/DL, viz, lazy)"
+version = "0.4.0"
+description = "Bandas: pandas-compatible DataFrames at full speed - SQL, time series, preprocessing, ML/DL, visualization"
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
-# تنصيب واحد يثبّت كل شيء: pip install bandas
-# (torch/tensorflow فقط اختياريان عبر [dl] لحجمهما الضخم وعدم توفرهما لكل النسخ)
+authors = [{ name = "salim-studio" }]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+  "Topic :: Database",
+]
+# Single-command install: pip install bandas-df
+# (torch/tensorflow stay optional under [dl]: multi-GB size, no wheels for newest Pythons)
 dependencies = [
   "numpy>=1.26",
   "pandas>=2.0",
@@ -26,6 +40,13 @@ dependencies = [
   "xlrd>=2.0",
 ]
 keywords = ["dataframe", "pandas", "fast", "numpy", "sql", "database", "machine-learning", "deep-learning", "data-science", "analytics", "time-series", "preprocessing"]
+
+[project.urls]
+Homepage = "https://github.com/salim-studio/bandas"
+Repository = "https://github.com/salim-studio/bandas"
+Documentation = "https://github.com/salim-studio/bandas#readme"
+Changelog = "https://github.com/salim-studio/bandas/blob/main/CHANGELOG.md"
+"Bug Tracker" = "https://github.com/salim-studio/bandas/issues"
 
 [project.optional-dependencies]
 speed = ["numba>=0.57", "pyarrow>=12"]

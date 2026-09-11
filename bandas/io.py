@@ -10,8 +10,8 @@ def _to_bandas_from_pandas(pdf):
 
 
 def read_csv(path, **kw):
-    """read_csv سريع — نفس توقيع pandas.read_csv."""
-    # 1) pyarrow fast path (أسرع 3-5x)
+    """Fast read_csv — same signature as pandas.read_csv."""
+    # 1) pyarrow fast path (3-5x faster)
     try:
         import pyarrow.csv as pacsv  # type: ignore
         t = pacsv.read_csv(path)
