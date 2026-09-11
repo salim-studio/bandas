@@ -4,14 +4,26 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bandas"
-version = "0.2.0"
+version = "0.3.0"
 description = "bandas — pandas-compatible, faster DataFrame + universal data platform (SQL/DB, time-series, preprocessing, ML/DL, viz, lazy)"
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
+# تنصيب واحد يثبّت كل شيء: pip install bandas
+# (torch/tensorflow فقط اختياريان عبر [dl] لحجمهما الضخم وعدم توفرهما لكل النسخ)
 dependencies = [
   "numpy>=1.26",
   "pandas>=2.0",
+  "numba>=0.57",
+  "pyarrow>=12",
+  "sqlalchemy>=2.0",
+  "duckdb>=0.9",
+  "scikit-learn>=1.3",
+  "scipy>=1.10",
+  "matplotlib>=3.7",
+  "seaborn>=0.12",
+  "openpyxl>=3.1",
+  "xlrd>=2.0",
 ]
 keywords = ["dataframe", "pandas", "fast", "numpy", "sql", "database", "machine-learning", "deep-learning", "data-science", "analytics", "time-series", "preprocessing"]
 

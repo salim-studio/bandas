@@ -16,14 +16,22 @@
 
 ## تنصيب
 
+تنصيب واحد يثبّت كل شيء (سرعة + قواعد بيانات + تعلم آلة + تصوير + إكسل):
+
+```bash
+pip install bandas
+```
+
+من المصدر:
+
 ```bash
 pip install -e .
-pip install -e ".[speed]"   # أقصى سرعة: numba + pyarrow
-pip install -e ".[db]"      # sqlalchemy + duckdb
-pip install -e ".[ml]"      # scikit-learn + scipy
-pip install -e ".[dl]"      # torch + tensorflow
-pip install -e ".[viz]"     # matplotlib
-pip install -e ".[all]"     # كل شيء
+```
+
+إضافي فقط للتعلم العميق (torch و tensorflow ضخمان — جيجابايتات — وغير متوفرين لكل نسخ Python):
+
+```bash
+pip install -e ".[dl]"
 ```
 
 ## 1) أساسيات (أسرع من pandas)
